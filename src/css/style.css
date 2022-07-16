@@ -1,0 +1,282 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(115deg, rgba(119,41,132,0.95) 10% , #01178D 100%),url("../images/background-code.png");
+    justify-items: center;
+    justify-content: center;
+    width: 940;
+    height: 100vh;
+    font-family: 'Jost', sans-serif;
+}
+
+body img {
+    position: absolute;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+nav li{
+    display: inline;
+    margin-inline: 20px;
+    animation: fadeInUp 5s;
+
+}
+
+nav img {
+    width: 20px;
+    height: 20px;
+}
+
+a { 
+    color: #05C5DF;
+}
+a:link { 
+    text-decoration: none;
+}
+a:visited { 
+    text-decoration: none; 
+}
+a:hover {
+    text-decoration: none; color: #00FFF0;
+}
+a:active {
+    text-decoration: none;
+}
+
+#home {
+    padding-top: 10%;
+    padding-left: 15%;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.title-name {
+    font-size: x-large;
+    color: #21CEEF;
+    animation: zoomIn;
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.perfil-photo {
+    margin-top: -5%;
+    margin-left: 50%;
+    max-width: 300px;
+    height: auto;
+    animation: flipInY 2s;
+}
+
+h1 {
+    font-size: 120px;
+    background: -webkit-linear-gradient(45deg, #00D1FF, #FFB884, #DF00F2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: flipInX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+p {
+    color: #A7A7A7;
+    font-size: xx-large;
+    margin: 6px;
+}
+
+#projects  {
+    height: 100vh;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
+
+#projects img  {
+    position: relative;
+    width: 55%;
+    max-height: auto;
+    animation: fadeIn;
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+#projects img:hover  {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 20px;
+}
+.projects-items {
+    padding: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description-items {
+    display: list-item;
+    background-color: black;
+}
+
+.projects-items p {
+    font-size: 18px;
+    padding: 6px;
+    color: white;
+}
+.projects-items li {
+    display: inline-block;
+}
+
+.projects-item:hover {
+    cursor: pointer;
+}
+
+.projects-item:active{
+    animation: zoomOut 5s;
+}
+
+#description-item {
+    position: relative;
+    background-color: black;
+    display: list-item;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    box-sizing: border-box;
+    color: #21CEEF;
+}
+
+
+.title-area {
+    text-align: center;
+    font-size: 60px;
+    box-sizing: border-box;
+    color: #21CEEF;
+}
+
+.title-area p {
+    font-size: 25px;
+    color: white;
+}
+
+#contact {
+    height: 100vh;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.contact-area {
+    display: grid;
+    margin: 5%;
+    grid-template-columns: auto;
+    grid-gap: 1rem 1rem;
+    justify-items: center;
+    position : relative;
+}
+
+.field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .field.label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: white;
+  }
+
+.textarea{
+    width: 50%;
+    height: 20vh;
+    padding: 8px;
+    margin: 4px;
+}
+
+
+.button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+.footer-area{
+    width: 100%;
+    height: 200px;
+    background-color: #432186;
+
+}
+.footer-area div{
+    padding-top: 3%;
+    padding-left: 35%;
+    text-align: center;
+    width: 500px;
+}
+
+.footer-area li{
+    display: inline;
+    margin-inline: 20px;
+}
+
+.footer-area  img {
+    width: 20px;
+    height: 20px;
+}
