@@ -1,38 +1,37 @@
-html {
-    scroll-behavior: smooth;
-}
+
 * {
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-     background-image: linear-gradient(115deg, rgba(119,41,132,0.95) 10% , #01178D 100%),url("../images/background-code.png"); 
-    width: 100%;
-    height: 100vh;
+    background-image: linear-gradient(115deg, rgba(119,41,132,0.95) 10% , #01178D 100%),url("../images/background-code.png"); 
     font-family: 'Jost', sans-serif;
 }
 
 
 header {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   text-align: center;
 }
 
 nav li{
     display: inline;
-    margin-inline: 20px;
+    margin-inline: 2vh;
     animation: fadeInUp 5s;
 }
 
 nav img {
-    width: 20px;
-    height: 20px;
+    width: 4vh;
+    height: auto;
 }
 
 a { 
     color: #05C5DF;
+    font-size: 1.2rem;
 }
 a:link { 
     text-decoration: none;
@@ -48,15 +47,13 @@ a:active {
 }
 
 main div {
-  margin: 5rem;
+  width: 80%;
+  margin: 6rem;
 }
 
 #home {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    width: auto;
-    height: auto;
-    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .left__home h1 {
@@ -82,10 +79,11 @@ main section{
 }
 
 main img{
-
-  max-width: 60%;
+  width: 50%;
+  min-width: 20vh;
+  margin-left: 10rem;
   height: auto;
-  animation: flipInY 2s;
+  animation: fadeIn 2s;
 }
 h1 {
     font-size: 120px;
@@ -106,16 +104,16 @@ p {
 }
 
 #projects  {
-    height: 100vh;
-    padding: 5%;
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  width: 100%;
+  height: 100vh;
+  padding: 5vh;
 }
 
 #projects img  {
     position: relative;
-    width: 55%;
-    max-height: auto;
+    width: 50%; 
+    max-width: 50%;
+    min-width: 30%;
     animation: fadeIn;
     animation-duration: 2s; /* don't forget to set a duration! */
 }
@@ -125,7 +123,6 @@ p {
     border-radius: 20px;
 }
 .projects-items {
-    padding: 2%;
     margin: 0 auto;
     text-align: center;
 }
@@ -135,11 +132,6 @@ p {
     background-color: black;
 }
 
-.projects-items p {
-    font-size: 18px;
-    padding: 6px;
-    color: white;
-}
 .projects-items li {
     display: inline-block;
 }
@@ -290,6 +282,25 @@ h2 {
 
 @media (max-width: 768px) {
   html{
-    font-size: 50%;
+    font-size: 65%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .left__home {
+    margin: 3%;
+  }
+
+  #projects {
+    padding: 3vh;
+  }
+  
+  .projects-item {
+    display: grid;
+    width: 50vw;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
