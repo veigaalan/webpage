@@ -66,11 +66,11 @@
                 <h2>Entre em contato</h2>
             </div>
             <div class="contact-area">
-                <form>
-                    <input class="field" type="text"  placeholder="Digite Seu nome">
-                    <input class="field" type="email"  placeholder="Digite seu e-mail">
-                    <input class="field" type="text"  placeholder="Assunto">
-                    <textarea class="field" type="text" placeholder="Mensagem"></textarea>
+                <form action="POST" data-netlify="true">
+                    <input name="name" class="field" type="text"  placeholder="Digite Seu nome">
+                    <input name="email" class="field" type="email"  placeholder="Digite seu e-mail">
+                    <input name="subject" class="field" type="text"  placeholder="Assunto">
+                    <textarea name="message" class="field" type="text" placeholder="Mensagem"></textarea>
                     <button id="button" class="button" role="button" type="submit">Enviar</button>
                 </form>
             </div>
