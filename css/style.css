@@ -79,6 +79,10 @@ main section{
   flex-grow: 1;
 }
 
+.laytou-projetc{
+  list-style: none;
+
+}
 main img{
   width: 50%;
   min-width: 20vh;
@@ -111,12 +115,9 @@ p {
 }
 
 #projects img  {
-    position: relative;
-    width: 50%; 
-    max-width: 50%;
-    min-width: 30%;
-    animation: fadeIn;
-    animation-duration: 2s; /* don't forget to set a duration! */
+  max-width: 50%;
+  animation: fadeIn;
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 #projects img:hover  {
@@ -124,8 +125,10 @@ p {
     border-radius: 20px;
 }
 .projects-items {
-    margin: 0 auto;
-    text-align: center;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .description-items {
